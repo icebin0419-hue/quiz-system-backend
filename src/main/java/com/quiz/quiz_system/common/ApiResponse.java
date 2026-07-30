@@ -1,0 +1,34 @@
+package com.quiz.quiz_system.common;
+
+/**
+ * 統一的成功/失敗回應格式
+ */
+public class ApiResponse {
+
+	private boolean success;
+	private String message;
+
+	public ApiResponse() {
+	}
+
+	public ApiResponse(boolean success, String message) {
+		this.success = success;
+		this.message = message;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+}
